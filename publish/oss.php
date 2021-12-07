@@ -12,7 +12,7 @@ declare(strict_types=1);
 return [
     'default' => [
         'access_key_id' => env('OSS_ACCESS_KEY_ID', 'key'),
-        'access_key_secret' => (int) env('OSS_ACCESS_KEY_SECRET', 'secret'),
+        'access_key_secret' => env('OSS_ACCESS_KEY_SECRET', 'secret'),
         'endpoint' => env('OSS_ENDPOINT', 'oss-cn-hangzhou.aliyuncs.com'),
         'use_ssl' => (bool) env('OSS_USE_SSL', true),
     ],
